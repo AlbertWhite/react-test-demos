@@ -15,6 +15,8 @@
 
 #### React hook
 
+#### HOC
+
 #### Other
 
 - Mock document element.

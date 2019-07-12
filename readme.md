@@ -17,6 +17,8 @@
 
 #### HOC
 
+#### Jest coverage test
+
 #### Other
 
 - Mock document element.

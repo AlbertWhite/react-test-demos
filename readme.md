@@ -2,7 +2,7 @@
 
 #### React Component
 
-- Use Enzyme to test a DOM element or react class exist.
+- Use Enzyme to test a DOM element or react class exist. DONE
 - Test a function is excuted after interaction with DOM.
 
 #### Connected Component / HOC component

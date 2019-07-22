@@ -1,10 +1,10 @@
 import React from 'react'
 import SubCom from './subComponent'
 
-const Com = () => {
+const Com = ({ func }) => {
   return (
     <div className="container">
-      <SubCom testProp="testProp" />
+      <SubCom testProp="testProp" func={func} />
     </div>
   )
 }

@@ -21,4 +21,17 @@ describe('componnet', () => {
     expect(wrapper.find('SubCom').length).toEqual(1)
     expect(wrapper.find('SubCom').props()).toEqual({ testProp: 'testProp' })
   })
+
+  it('func should be excusted if we click on subComponent', () => {
+    // GIVEN
+    const func = jest.fn()
+    const props = { func }
+
+    // WHEN
+    const wrapper = mount(<Com {...props} />)
+    wrapper.find('.subContainer').simulate('click')
+
+    // THEN
+    expect(func).toBeCalled()
+  })
 })

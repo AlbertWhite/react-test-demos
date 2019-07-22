@@ -3,9 +3,12 @@
 #### React Component
 
 - Use Enzyme to test a DOM element or react class exist. DONE
-- Test a function is excuted after interaction with DOM.
+- Test a function is excuted after interaction with DOM. DONE
 
 #### Connected Component / HOC component
+
+- Test a connected component. DONE
+- Test a HOC component like reduxForm. DONE
 
 #### Redux-saga
 
@@ -14,8 +17,6 @@
 #### Promise
 
 #### React hook
-
-#### HOC
 
 #### Jest coverage test
 

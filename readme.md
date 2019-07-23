@@ -12,9 +12,13 @@
 
 #### Redux-saga
 
-- Test if a saga effect is excuted with good parameters.
+- Test if a saga effect is excuted with good parameters. DONE.
 
 #### Promise
+
+- test promise with mock implementation
+  https://github.com/AlbertWhite/things/issues/17
+  https://github.com/FnacDarty/fnac-authentication/pull/94
 
 #### React hook
 

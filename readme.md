@@ -16,7 +16,7 @@
 
 #### Promise
 
-- test promise with mock implementation
+- test promise with mock implementation. IN Progress.
   https://github.com/AlbertWhite/things/issues/17
   https://github.com/FnacDarty/fnac-authentication/pull/94
 

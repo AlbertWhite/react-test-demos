@@ -26,9 +26,30 @@ https://github.com/testing-library/react-testing-library
 
 #### Jest coverage test
 
+yarn test --coverage
+
+#### Mock dependency
+
+- mock default export
+- mock with implementation multiple times
+- mock only a named export
+- mock a named export multiple times
+
 #### Other
 
 - Mock document element.
-- Mock global value.
-- Mock an import.
+
 - Mock a javascript native object.
+
+```
+global.Date  =  class  extends  Date {
+		constructor(...args) {
+			if (args.length) {
+			// if there is argument, keep the old constructor
+				return  new  RealDate(...args)
+			}
+			// if there is no argument, use the new constructor
+			return  new  RealDate(date)
+		}
+	}
+```

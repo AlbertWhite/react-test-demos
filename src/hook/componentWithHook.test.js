@@ -15,7 +15,6 @@ describe('ComponentWithHooks', () => {
     expect(getByText('Hello')).toBeInTheDocument()
     expect(queryByText('World')).not.toBeInTheDocument() // query by won't throw https://testing-library.com/docs/dom-testing-library/cheatsheet#queries
   })
-
   test('show default text', () => {
     // WHEN
     const { queryByTestId } = render(<ComponentWithHooks />)

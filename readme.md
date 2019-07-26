@@ -16,11 +16,13 @@
 
 #### Promise
 
-- test promise with mock implementation. IN Progress.
+- test promise with mock implementation. DONE.
   https://github.com/AlbertWhite/things/issues/17
   https://github.com/FnacDarty/fnac-authentication/pull/94
 
 #### React hook
+
+https://github.com/testing-library/react-testing-library
 
 #### Jest coverage test
 

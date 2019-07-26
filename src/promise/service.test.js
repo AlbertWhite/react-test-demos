@@ -8,6 +8,7 @@ describe('service', () => {
   })
 
   it('should return ok if input is true: second way', () => {
+    // remember to return the promise in the end
     return service(true).then(data => {
       expect(data).toBe('ok')
     })

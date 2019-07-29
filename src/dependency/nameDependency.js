@@ -1,1 +1,1 @@
-export const nameDependency = input => input
+export const sameString = input => input

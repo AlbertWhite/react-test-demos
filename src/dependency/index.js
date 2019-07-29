@@ -1,10 +1,10 @@
-import defaultDependency from './defaultDependency'
-import { nameDependency } from './nameDependency'
+import reverseString from './defaultDependency'
+import { sameString } from './nameDependency'
 
 export const func = (bool, input) => {
   if (bool) {
-    return defaultDependency(input)
+    return reverseString(input)
   } else {
-    return nameDependency(input)
+    return sameString(input)
   }
 }

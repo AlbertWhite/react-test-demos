@@ -1,32 +1,13 @@
 import { func } from './index'
-import defaultDependency from './defaultDependency'
+
+// test default dependency and and dependency by import and mock (only once)
+
+jest.mock('./defaultDependency', () => input => input) // mock should in the beginning
+jest.mock('./nameDependency', () => ({ sameString: input => input + '1' })) // mock should in the beginning
 
 describe('func', () => {
-  it('should return right string', () => {
-    expect(func(true, 'hello')).toEqual('olleh')
-    expect(func(false, 'hello')).toEqual('hello')
-  })
-
-  // it('should work with mock dependency', () => {
-  //   jest.mock('./nameDependency', () => ({
-  //     nameDependency: input =>
-  //       input
-  //         .split('')
-  //         .reverse()
-  //         .join('')
-  //   }))
-  //   expect(func(false, 'hello')).toEqual('olleh')
-  // })
-
   it('should work with mock dependency', () => {
-    jest.mock('./defaultDependency', () => input => input)
-    expect(func(false, 'hello')).toEqual('hello')
+    expect(func(true, 'hello')).toEqual('hello')
+    expect(func(false, 'hello')).toEqual('hello1')
   })
-
-  // it('should work with mock dependency', () => {
-  //   jest.mock('./defaultDependency')
-  //   defaultDependency.mockImplementationOnce(input => input + 'test')
-
-  //   expect(func(true, 'hello')).toEqual('hellotest')
-  // })
 })

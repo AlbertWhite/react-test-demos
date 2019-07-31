@@ -1,6 +1,6 @@
 //https://jestjs.io/docs/en/es6-class-mocks
 
-https: import { func } from './index'
+import { func } from './index'
 import reverseString from './defaultDependency'
 import * as nameDependencies from './nameDependency'
 

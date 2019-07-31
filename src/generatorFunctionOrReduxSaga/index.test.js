@@ -4,7 +4,6 @@ import { testGeneratorFunction, testFunction } from './index'
 describe('testGeneratorFunction', () => {
   it('should call testFunction', () => {
     // GIVEN
-
     const gen = testGeneratorFunction()
 
     // WHEN
